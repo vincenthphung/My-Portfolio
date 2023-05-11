@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
 
 * {
   margin: 0;
@@ -28,13 +30,22 @@ body {
   color: var(--text-color);
 }
 
+/* section { */
+/* min-height: 100vh; */
+/* padding: 10rem 9% 2rem; */
+/* } */
+
 section {
   /* min-height: 100vh; */
-  /* height: auto; */
-  /* height: 100%; */
-  /* width: 100%; */
-  height: 100vh;
-  /* padding: 10rem 9% 2rem; */
+  /* min-height: calc(100vh - 4rem); */
+  /* padding: 10rem; */
+  /* overflow-y: hidden; */
+  /* overflow-x: hidden; */
+  overflow-x: hidden;
+  padding: 10rem 9% 2rem;
+
+  /* padding-bottom: 0; */
+  /* margin-bottom: -1px; */
 }
 
 .header {
@@ -89,10 +100,11 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10rem 9% 6rem;
 }
 
 .home-img img {
-  width: 30vw;
+  /* 	width: 30vw; */
   display: flex;
   justify-content: center;
   margin-left: 15%;
@@ -180,19 +192,34 @@ span {
 
 .about {
   display: flex;
-  justify-content: center;
+  /* 	justify-content: center; */
+  gap: 6rem;
   align-items: center;
   background: var(--second-bg-color);
+  padding: 10rem 9% 6rem;
 }
 
 .about-img img {
-  width: 30vw;
+  width: 20vw;
 }
 
 .heading {
   text-align: center;
   font-size: 4.5rem;
   margin-bottom: 4rem;
+}
+
+.skills {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding: 10rem 9% 6rem;
+}
+
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  /* 	align-items: center; */
 }
 
 .about-content h2 {
@@ -240,6 +267,8 @@ span {
 
 .portfolio {
   background: var(--second-bg-color);
+  margin: 4rem 0;
+  padding: 10rem 9% 6rem;
 }
 
 .portfolio h2 {
@@ -248,48 +277,64 @@ span {
 
 .portfolio-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* 	grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: 1fr;
+  justify-content: space-evenly;
+  /* 	justify-content: center; */
   align-items: center;
-  gap: 2.5rem;
+  /* 	gap: 2.5rem; */
+}
+
+.portfolio-box {
+  display: flex;
+  gap: 4rem;
+  padding: 3rem;
+  justify-content: center;
 }
 
 .portfolio-container .portfolio-box {
-  position: relative;
+  /* 	position: relative; */
   border-radius: 2rem;
-  box-shadow: 0 0 1rem var(--bg-color);
-  overflow: hidden;
-  display: flex;
+  /* 	box-shadow: 0 0 1rem var(--bg-color); */
+  /* 	overflow: hidden; */
+  /* 	display: flex; */
 }
 
 .portfolio-box img {
-  width: 100%;
+  max-width: 100vw;
+  height: 100%;
+  /* 	height: 50vh; */
   transition: 0.5s ease;
 }
 
+.portfolio-box:nth-child(even) img {
+  order: 2;
+}
+
 .portfolio-box:hover img {
-  transform: scale(1.1);
+  /* 	transform: scale(1.1); */
 }
 
-.portfolio-box .portfolio-layer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 0 4rem;
-  transform: translateY(100%);
-  transition: 0.6s ease;
-}
-
+/* .portfolio-box .portfolio-layer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	padding: 0 4rem;
+	transform: translateY(100%);
+	transition: 0.6s ease;
+} */
+/* 
 .portfolio-box:hover .portfolio-layer {
-  transform: translateY(0);
-}
+	transform: translateY(0);
+} */
 
 .portfolio-layer h4 {
   font-size: 3rem;
@@ -297,24 +342,24 @@ span {
 
 .portfolio-layer p {
   font-size: 1.6rem;
-  margin: 0.3rem 0 1rem;
+  /* 	margin: 0.3rem 0 1rem; */
 }
 
-.portfolio-layer a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 5rem;
-  height: 5rem;
-  background: var(--text-color);
-  border-radius: 50%;
+/* .portfolio-layer a {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 5rem;
+	height: 5rem;
+	background: var(--text-color);
+	border-radius: 50%;
 }
 
 .portfolio-layer a i {
-  font-size: 2rem;
-  color: var(--second-bg-color);
+	font-size: 2rem;
+	color: var(--second-bg-color);
 }
-
+ */
 .contact h2 {
   margin-bottom: 3rem;
 }

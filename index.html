@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
+  <html lang="en">
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vincent Phung | Software Engineer Portfolio</title>
-  
-  <!-- box icons-->
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <title>Vincent Phung | Software Engineer</title>
 
-  
-  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-  
-  <!-- custom css-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- custom css -->
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js"></script>
 </head>
 
 <body>
   <!--header design -->
   <header class="header">
-    <a href="#" class="logo">Portfolio</a>
+    <a href="#" class="logo">VP</a>
 
     <i class="bx bx-menu" id="menu-icon"></i>
 
@@ -50,27 +48,42 @@
       </div>
       <a href="#" class="btn">Download CV</a>
     </div>
+    <img src="https://assets.codepen.io/9659831/open.jpeg?format=webp&fit=cover" alt="home-img"
+      style="border-radius: 150%;" />
     <div class="home-img">
-      <img src="https://picsum.photos/seed/picsum/200/300" alt="picsumphoto" />
     </div>
   </section>
 
   <!-- about section design-->
   <section class="about" id="about">
     <div class="about-img">
-      <img src="https://picsum.photos/seed/picsum/200/300" alt="picsumabout image" />
+      <img src="https://picsum.photos/seed/picsum/200/300" alt="about image" />
     </div>
 
     <div class="about-content">
-      <h2 class="heading">About <span>Me</span></h2>
-      <h3>Frontend Developer</h3>
-      <p>
-        My <span>goal</span> is to bring business to life by designing and
+      <h2 class="heading" data-aos="fade-up">About <span>Me</span></h2>
+      <h3><span class="about-text"></span></h3>
+      <p>My <span>goal</span> is to bring business to life by designing and
         developing beautiful, <br />
         functional, responsive and effective websites that brings more
-        customers and sales.
-      </p>
-      <a href="#" class="btn">Read more</a>
+        customers and sales.</p>
+
+      <p>Hey there! I'm Vincent Phung, a passionate software engineer ready to be part of a dynamic team. I love diving
+        into
+        challenges, solving problems, and continuously expanding my skills in the fast-paced tech world. But you know
+        what else
+        fuels me? My furry sidekick! I'm a proud dog lover and cherish every moment spent with my canine companion.
+        Let's
+        connect and build amazing software together while swapping stories about our four-legged friends!</p>
+
+      <!-- <a href="#" class="btn">Let's Connect</a> -->
+      <div class="social-media">
+        <a href="https://codepen.io/vphunggg" target="_blank"><i class="bx bxl-codepen"></i></a>
+        <a href="https://www.linkedin.com/in/vincenthphung" target="_blank"><i class="bx bxl-linkedin-square"></i></a>
+        <a href="https://github.com/vincenthphung"><i class="bx bxl-github" target="_blank"></i></a>
+        <a href="https://github.com/vincenthphung"><i class="bx bx-link-external" target="_blank"></i></a>
+        <!-- <a href="https://github.com/vincenthphung"><i class="bx bx-link-external" target="_blank"></i></a> -->
+      </div>
     </div>
   </section>
 
@@ -78,113 +91,154 @@
   <section class="skills" id="skills">
     <h2 class="heading">My <span>Skills</span></h2>
     <div class="skills-container">
-      <div class="skill">
+      <div class="skill" data-aos="flip-in">
         <i class="skill-icon bx bxl-javascript"></i>
         <h3 class="skill-title">JavaScript</h3>
       </div>
-      <div class="skill">
+      <div class="skill" data-aos="flip-out">
         <i class="skill-icon bx bxl-react"></i>
         <h3 class="skill-title">React</h3>
       </div>
-      <div class="skill">
+      <div class="skill" data-aos="flip-up">
         <i class="skill-icon bx bxl-redux"></i>
         <h3 class="skill-title">Redux</h3>
       </div>
-      <div class="skill">
+      <div class="skill" data-aos="flip-down">
         <i class="skill-icon bx bxl-django"></i>
         <h3 class="skill-title">Django</h3>
       </div>
-      <div class="skill">
+      <div class="skill" data-aos="flip-left">
         <i class="skill-icon bx bxl-python"></i>
         <h3 class="skill-title">Python</h3>
       </div>
-      <div class="skill">
+      <div class="skill" data-aos="flip-right">
         <i class="skill-icon bx bxl-html5"></i>
         <h3 class="skill-title">HTML</h3>
       </div>
-      <div class="skill">
+      <div class="skill" data-aos="flip-up">
         <i class="skill-icon bx bxl-css3"></i>
         <h3 class="skill-title">CSS</h3>
       </div>
-      <div class="skill">
+      <div class="skill" data-aos="flip-up">
         <i class="skill-icon bx bxl-git"></i>
         <h3 class="skill-title">Git</h3>
       </div>
-      <div class="skill">
+      <div class="skill" data-aos="flip-up">
         <i class="skill-icon bx bxl-docker"></i>
         <h3 class="skill-title">Docker</h3>
       </div>
-      <div class="skill">
+      <div class="skill" data-aos="flip-up">
         <i class="skill-icon bx bxl-postgresql"></i>
         <h3 class="skill-title">PostgreSQL</h3>
       </div>
-      <div class="skill">
+      <div class="skill" data-aos="flip-up">
         <i class="skill-icon bx bxl-tailwind-css"></i>
         <h3 class="skill-title">Tailwind CSS</h3>
       </div>
-      <div class="skill">
+      <div class="skill" data-aos="flip-up">
         <i class="skill-icon bx bxl-bootstrap"></i>
         <h3 class="skill-title">Bootstrap</h3>
       </div>
     </div>
   </section>
 
+  <div class="item" data-aos="fade-up">1</div>
+  <div class="item" data-aos="fade-down">2</div>
+  <div class="item" data-aos="fade-right">3</div>
+  <div class="item" data-aos="fade-left">4</div>
+
+  <div class="item" data-aos="zoom-in">5</div>
+  <div class="item" data-aos="zoom-out">6</div>
+
   <!-- portfolio section design-->
   <section class="portfolio" id="portfolio">
-    <h2 class="heading">Latest <span>Projects</span></h2>
+    <h2 class="heading" data-aos="fade-up">Latest <span>Projects</span></h2>
 
     <div class="portfolio-container">
       <div class="portfolio-box">
-        <img src="https://picsum.photos/seed/picsum/200/300" alt="picsum" />
+        <img src="https://picsum.photos/seed/picsum/300/200" data-aos="fade-up" data-aos-easing="ease-in-out"
+          alt="picsum" />
         <div class="portfolio-layer">
-          <h4>Web Development</h4>
-          <p>Lorem ipsum dolor sit amet consectetur</p>
-          <a href="#"><i class="bx bx-link-external"></i></a>
+          <h4>Direct Rep</h4>
+          <p>Direct Rep is a full-stack application that combines the power of AI and government transparency. By
+            streamlining the
+            letter-writing process, users can communicate effectively with state officials while bypassing spam filters.
+            Secure
+            authentication and authorization protect user information, ensuring a positive and impactful experience.</p>
+          <!-- 				<a href="#"><i class="bx bx-link-external"></i></a> -->
         </div>
       </div>
 
       <div class="portfolio-box">
-        <img src="https://picsum.photos/seed/picsum/200/300" alt="picsum" />
+        <img src="https://picsum.photos/seed/picsum/300/200" data-aos="fade-down" data-aos-easing="ease-in-out"
+          alt="picsum" />
         <div class="portfolio-layer">
-          <h4>Web Development</h4>
-          <p>Lorem ipsum dolor sit amet consectetur</p>
-          <a href="#"><i class="bx bx-link-external"></i></a>
+          <h4>Auto Ease</h4>
+          <p>Auto Ease introduces a robust microservice for car inventory, appointments, and sales. With a user-friendly
+            interface,
+            dealerships can effortlessly manage inventory and schedule service appointments. Optimized for high traffic,
+            the
+            microservice boosts operational efficiency and enhances the user experience.</p>
+          <!-- 				<a href="#"><i class="bx bx-link-external"></i></a> -->
         </div>
       </div>
 
       <div class="portfolio-box">
-        <img src="https://picsum.photos/seed/picsum/200/300" alt="picsum" />
+        <img src="https://picsum.photos/seed/picsum/300/200" data-aos="fade-right" data-aos-easing="ease-in-out"
+          alt="picsum" />
         <div class="portfolio-layer">
-          <h4>Web Development</h4>
-          <p>Lorem ipsum dolor sit amet consectetur</p>
-          <a href="#"><i class="bx bx-link-external"></i></a>
+          <h4>Conference Pro</h4>
+          <p>Conference Pro simplifies event planning with a user-friendly application. From seamless registration to
+            efficient
+            data processing, this platform optimizes performance and exceeds client expectations. Streamline conference
+            management
+            and impress attendees with a smooth and engaging experience.</p>
+          <!-- 				<a href="#"><i class="bx bx-link-external"></i></a> -->
         </div>
       </div>
 
       <div class="portfolio-box">
-        <img src="https://picsum.photos/seed/picsum/200/300" alt="picsum" />
+        <img src="https://picsum.photos/seed/picsum/300/200" data-aos="fade-left" data-aos-easing="ease-in-out"
+          alt="picsum" />
         <div class="portfolio-layer">
-          <h4>Web Development</h4>
-          <p>Lorem ipsum dolor sit amet consectetur</p>
-          <a href="#"><i class="bx bx-link-external"></i></a>
+          <h4>Wardrobify</h4>
+          <p>Wardrobify leverages the power of React and custom APIs to provide a comprehensive solution for managing
+            hats, shoes,
+            and wardrobe items. The combination of React frontend and backend APIs enables users to view, create, and
+            manage their
+            hat and shoe collections effortlessly.</p>
+          <!-- 				<a href="#"><i class="bx bx-link-external"></i></a> -->
         </div>
       </div>
 
       <div class="portfolio-box">
-        <img src="https://picsum.photos/seed/picsum/200/300" alt="picsum" />
+        <img src="https://picsum.photos/seed/picsum/300/200" data-aos="flip-up" data-aos-easing="ease-in-out"
+          alt="picsum" />
         <div class="portfolio-layer">
-          <h4>Web Development</h4>
-          <p>Lorem ipsum dolor sit amet consectetur</p>
-          <a href="#"><i class="bx bx-link-external"></i></a>
+          <h4>Jamming App</h4>
+          <p>Jamming App utilizes the power of React and Spotify API to create a user-friendly web application that
+            revolutionizes
+            the way users interact with Spotify. By providing seamless search functionality, users can easily find songs
+            by title,
+            artist, or genre. The ability to create custom playlists and export them to their Spotify account enhances
+            the user experience and allows for personalized music curation.</p>
+          <!-- 				<a href="#"><i class="bx bx-link-external"></i></a> -->
         </div>
       </div>
 
       <div class="portfolio-box">
-        <img src="https://picsum.photos/seed/picsum/200/300" alt="picsum" />
+        <img src="https://picsum.photos/seed/picsum/300/200" data-aos="flip-down" data-aos-easing="ease-in-out"
+          alt="picsum" />
         <div class="portfolio-layer">
-          <h4>Web Development</h4>
-          <p>Lorem ipsum dolor sit amet consectetur</p>
-          <a href="#"><i class="bx bx-link-external"></i></a>
+          <h4>Django Delights</h4>
+          <p>With Django Delights Inventory Tracker, businesses can streamline their inventory management processes,
+            reduce
+            operational costs, and improve overall efficiency. Whether it's a small business or a large enterprise,
+            Django Delights
+            Inventory Tracker is the ideal solution for businesses seeking a reliable and feature-rich inventory
+            management
+            application built on the Django framework.</p>
+          <!-- 				<a href="#"><i class="bx bx-link-external"></i></a> -->
         </div>
       </div>
     </div>
@@ -208,6 +262,7 @@
       <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
 
       <input type="submit" value="Send Message" class="btn" />
+      <!-- <input type="submit" value="Send Message" class="secondary outline" /> -->
     </form>
   </section>
 
@@ -222,12 +277,15 @@
   </footer>
 
   <!-- custom js -->
-
   <!-- typed js -->
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> 
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
   <!-- scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://unpkg.com/boxicons@2.1.4/js/boxicons.min.js"></script>
-  </body>
+  <script src="https://unpkg.com/boxicons@2.1.4/js/boxicons.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
