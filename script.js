@@ -1,11 +1,11 @@
 AOS.init({
-  duration : 1000,
-  delay : 500,
-  easing : 'ease-in-out',
-  offset : 120, // Change this value to tweak when animation starts
+  duration: 1000,
+  delay: 500,
+  easing: "ease-in-out",
+  offset: 120, // Change this value to tweak when animation starts
 });
 
-window.addEventListener("DOMContentLoaded", function() {
+window.addEventListener("DOMContentLoaded", function () {
   const menuIcon = document.querySelector("#menu-icon");
   const navbar = document.querySelector(".navbar");
 
@@ -17,8 +17,9 @@ window.addEventListener("DOMContentLoaded", function() {
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll('header nav a[href^="#"]');
   const header = document.querySelector("header");
-  const contactNavLink =
-      document.querySelector('header nav a[data-section="contact"]');
+  const contactNavLink = document.querySelector(
+    'header nav a[data-section="contact"]'
+  );
 
   window.addEventListener("scroll", () => {
     const top = window.scrollY;
@@ -30,8 +31,9 @@ window.addEventListener("DOMContentLoaded", function() {
 
       if (top >= offset && top < offset + height) {
         const prevActiveLink = document.querySelector("header nav a.active");
-        const currActiveLink =
-            document.querySelector(`header nav a[href="#${id}"]`);
+        const currActiveLink = document.querySelector(
+          `header nav a[href="#${id}"]`
+        );
 
         if (prevActiveLink !== currActiveLink) {
           prevActiveLink?.classList.remove("active");
@@ -55,30 +57,44 @@ window.addEventListener("DOMContentLoaded", function() {
   });
 
   const typed = new Typed(".multiple-text", {
-    strings : [
-      "Frontend Developer", "Software Engineer", "Full Stack Developer",
-      "Versatile", "Detail-Oriented", "Experienced with Agile",
-      "Problem-Solver", "Collaborative Team Member", "Proactive Leader",
-      "Efficient Project Manager", "Strong Leadership Skills",
-      "Excellent Communicator"
+    strings: [
+      "Frontend Developer",
+      "Software Engineer",
+      "Full Stack Developer",
+      "Versatile",
+      "Detail-Oriented",
+      "Experienced with Agile",
+      "Problem-Solver",
+      "Collaborative Team Member",
+      "Proactive Leader",
+      "Efficient Project Manager",
+      "Strong Leadership Skills",
+      "Excellent Communicator",
     ],
-    typeSpeed : 50,
-    backSpeed : 100,
-    backDelay : 1000,
-    loop : true
+    typeSpeed: 50,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true,
   });
 
   const typedAbout = new Typed(".about-text", {
-    strings : [
-      "Passionate about Tech", "Innovative Thinker", "Collaborative Partner",
-      "Results-driven Professional", "Dedicated and Committed",
-      "Adaptable to Change", "Team Player", "Critical Thinker",
-      "Reliable Colleague", "Fast Learner", "Skilled Negotiator",
-      "Effective Problem Solver"
+    strings: [
+      "Passionate about Tech",
+      "Innovative Thinker",
+      "Collaborative Partner",
+      "Results-driven Professional",
+      "Dedicated and Committed",
+      "Adaptable to Change",
+      "Team Player",
+      "Critical Thinker",
+      "Reliable Colleague",
+      "Fast Learner",
+      "Skilled Negotiator",
+      "Effective Problem Solver",
     ],
-    typeSpeed : 50,
-    backSpeed : 50,
-    backDelay : 1000,
-    loop : true
+    typeSpeed: 50,
+    backSpeed: 50,
+    backDelay: 1000,
+    loop: true,
   });
 });
